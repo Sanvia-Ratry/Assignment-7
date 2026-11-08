@@ -102,7 +102,7 @@
     "email": "william@example.com",
     "days_since_contact": 16,
     "status": "Almost due",
-    "tags": ["work", "former colleague"],
+    "tags": ["work", "ex-colleague"],
     "bio": "Worked together on several software development projects.",
     "goal": 14,
     "next_due_date": "2026-11-05"

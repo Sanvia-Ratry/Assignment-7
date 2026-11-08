@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@theme {
+  --color-font-green: #1f2937;
+}
 
 body {
   background: var(--background);

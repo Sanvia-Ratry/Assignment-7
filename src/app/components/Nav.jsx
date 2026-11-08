@@ -26,7 +26,7 @@ const Nav = () => {
             <Link
               key={link.href}
               href={link.href}
-              className={`${isActive ? "border rounded-[4px] bg-green-800 text-white" : ""}
+              className={`${isActive ? "border rounded-sm bg-green-800 text-white" : ""}
             flex gap-1 items-center px-4 py-3 text-[#64748b] font-medium`}
             >
               <ReactIcons className="h-5 w-6"></ReactIcons>
