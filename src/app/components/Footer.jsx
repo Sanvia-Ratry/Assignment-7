@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React from "react";
-
+//px-30 md:px-40 lg:px-60 py-20
 const Footer = () => {
   return (
-    <div className="flex flex-col gap-10 bg-[#244d3f] text-white px-61.25 pt-20 justify-center text-center">
+    <div className="flex flex-col gap-10 bg-[#244d3f] text-white px-25 sm:px-30 md:px-40 lg:px-61.25 pt-20 justify-center text-center">
       <div className="space-y-4">
-        <h1 className="font-extrabold text-8xl">
+        <h1 className="font-extrabold text-3xl sm:text-5xl md:text-8xl">
           Keen<span className="font-medium">Keeper</span>
         </h1>
         <p>
@@ -34,11 +34,13 @@ const Footer = () => {
           ></Image>
         </div>
       </div>
-      <div className="text-gray-400 py-8 flex justify-between border-t border-gray-500">
-        <div>
-          <p>© 2026 KeenKeeper. All rights reserved.</p>
+      <div className="text-gray-400 py-8 flex flex-col sm:flex-row justify-between border-t border-gray-500">
+        <div className="mb-3">
+          <p>
+            © 2026 KeenKeeper. <br></br> All rights reserved.
+          </p>
         </div>
-        <div className="flex gap-2.5">
+        <div className="flex flex-col sm:flex-row gap-1.5 sm:gap-2.5">
           <span>Privacy Policy</span>
           <span>Terms of Service</span>
           <span>Cookies</span>

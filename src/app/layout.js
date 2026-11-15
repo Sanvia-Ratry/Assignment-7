@@ -3,6 +3,10 @@ import "./globals.css";
 import { RiGhost3Fill } from "react-icons/ri";
 import Nav from "@/app/components/Nav";
 import Footer from "./components/Footer";
+import AppProvider from "./context/AppContext";
+
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const geist = Geist({
   variable: "--font-geist",
@@ -18,9 +22,23 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${geist.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
-        <Nav></Nav>
-        {children}
-        <Footer></Footer>
+        <AppProvider>
+          <Nav></Nav>
+          {children}
+          <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick={false}
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+          />
+          <Footer></Footer>
+        </AppProvider>
       </body>
     </html>
   );

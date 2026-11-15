@@ -1,10 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+}
+
 @theme {
   --color-font-green: #1f2937;
+  --color-font-darkGreen: #244d3f;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geist);
+}
+/* src/app/globals.css */
+/* src/app/globals.css */
+
+.toast-call {
+  background-color: #dcfce7 !important;
+  color: #15803d !important;
+  border: 1px solid #86efac;
+  font-weight: 600;
+}
+.toast-call .Toastify__progress-bar {
+  background: #15803d !important;
+}
+.toast-text {
+  background-color: #dbeafe !important;
+  color: #1d4ed8 !important;
+  border: 1px solid #93c5fd;
+  font-weight: 600;
+  --toastify-color-progress-light: #1d4ed8;
+}
+.toast-text .Toastify__progress-bar {
+  background: #1d4ed8 !important;
+}
+.toast-video {
+  background-color: #f3e8ff !important;
+  color: #6d28d9 !important;
+  border: 1px solid #d8b4fe;
+  font-weight: 600;
+  --toastify-color-progress-light: #6d28d9;
+}
+.toast-video .Toastify__progress-bar {
+  background: #6d28d9 !important;
 }

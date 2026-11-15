@@ -14,15 +14,15 @@ const Card = ({ item }) => {
           height="80"
           className="rounded-full"
         ></Image>
-        <h2>{item.name}</h2>
+        <h2 className="text-nowrap">{item.name}</h2>
         <p className="text-gray-400">{item.days_since_contact}d ago</p>
-        <div className="flex gap-1">
+        <div className="flex flex-col lg:flex-row gap-1">
           {tags.map((tag, ind) => (
             <span
               key={ind}
-              className="font-medium px-2 py-2 rounded-4xl bg-[#cbfadb] text-[#244d3f]"
+              className="font-medium text-nowrap flex justify-center items-center text-xs px-2 py-1.5 rounded-4xl bg-[#cbfadb] text-[#244d3f]"
             >
-              {tag}
+              {tag.toUpperCase()}
             </span>
           ))}
         </div>
@@ -37,7 +37,7 @@ const Card = ({ item }) => {
                   ? "bg-green-800"
                   : ""
           }
-            font-medium text-white px-2 py-2 rounded-3xl`}
+            font-medium text-white px-2 py-2 text-xs rounded-3xl`}
         >
           {item.status}
         </span>
